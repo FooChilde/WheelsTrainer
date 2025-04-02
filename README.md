@@ -3,7 +3,7 @@ An OSC-to-YouTube 360° Controller
 Control spherical YouTube videos with OSC devices like the NODO Inertia Wheels
 
 ## Installation
-1. Download the `dist/` folder from the latest release for your OS.
+1. Download the installer from the latest release for your OS.
 2. Install using `WheelsTrainer Setup 0.1.0-beta.exe` for Windows or `WheelsTrainer-0.1.0-beta-arm64.dmg` for macOS.
 
 ## Usage  
