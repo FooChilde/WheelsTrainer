@@ -56,5 +56,6 @@ MIT License - See LICENSE for full terms.
 
 ## Contact
 For support, feature requests, or collaboration:
+- Use the `Feedback` or `Bug Report` links in the Help menu.
 - Discord: Foo_Childe (https://discord.com/users/139956315316420608)
 - GitHub: WheelsTrainer (https://github.com/FooChilde/WheelsTrainer)
