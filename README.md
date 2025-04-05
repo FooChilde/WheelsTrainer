@@ -1,35 +1,60 @@
-# WheelsTrainer  
-An OSC-to-YouTube 360° Controller  
-Control spherical YouTube videos with OSC devices like the NODO Inertia Wheels
+# WheelsTrainer
+A Professional Camera Control Trainer for YouTube Spherical Videos
+
+A specialized training tool for camera operators that simulates real-world geared & remote head controls using either OSC-compatible wheels or mouse-style controllers.
+
+### Key Features
+- Supports both OSC (Inertia Wheels) and mouse-style (HammerHead, Black-Tek, Rexy) controllers
+- Real-time spherical video playback with adjustable Field Of View
+- Frame line overlays and aspect ratio guides
+- Crosshair display for precise framing
+- Direct URL loading from YouTube
 
 ## Installation
-1. Download the installer from the latest release for your OS.
-2. Install using `WheelsTrainer.Setup.0.1.0-beta.exe` for Windows or `WheelsTrainer-0.1.0-beta-arm64.dmg` for macOS.
+### For End Users
+1. Download the latest release for your OS from the Releases page
+2. Windows: Run `WheelsTrainer-Setup-x.x.x.exe` and complete setup wizard
+3. macOS: Open `WheelsTrainer-x.x.x-arm64.dmg` and drag to Applications
 
-## Usage  
-1. Open `WheelsTrainer`. For Windows, check the `WheelsTrainer` folder in the Start Menu or the created shourtcut on your desktop. For macOS, check for `WheelsTrainer.app` in your Applications.
-2. Make sure your OSC controller is connected and is running a server.
-3. In `WheelsTrainer`, click the `OSC Settings` button near the bottom right corner of the player.
-4. In the Settings pop-up window, verify that the `IP Address` and `Port` settings match your OSC server's settings. Click the `Save Settings` button.
-5. Under the player, you should now see numerical degree values in the `Pan:`, `Tilt:` and `Roll:` fields. You should also have full control over the player's viewport via your OSC controller.
-6. To load a video, copy the url of the video you'd like to play into the `URL:` field near the bottom left corner of the player and click the `Load` button. Your video should automatically play.
+## Usage
+1. Launch the application. If launching for the first time, activation may be required. 
+2. Configure your controller type in Settings:
+   - OSC Mode: For Inertia Wheels controllers
+   - Mouse Mode: For HammerHead/Black-Tek/Rexy Wheels or other mouse-style controllers
+3. Load any YouTube spherical video using the URL input near the bottom left corner of the player.
+4. Adjust FOV and framing tools as desired.
 
-# Development
-- For Development access, contact the developer. Information in the `Contact` section of this README.
-- Download the `WheelsTrainer/` folder from the desired branch.
+## Controller Setup
+### OSC Controllers
+1. Ensure your wheels are connected to an OSC server that is running on the same network as your machine.
+2. Match the `IP Address` and `Port` settings to your running OSC server.
+3. Click `Save Settings`. In the main window, a grey `ERASE` field indicates WheelsTrainer's OSC Connection is closed. A green `STBY` field indicates the OSC Connection is open, but WheelsTrainer is not receiving any OSC messages. A red `REC` are indicates WheelsTrainer is receiving OSC messages and is updating the player's properties.
 
-## Install dependencies
-- `npm ci`
+### Mouse-Style Controllers
+1. Select "Mouse-Style" in Controller Settings
+2. Click the green `STBY` field underneath the player to enter cursor capture mode. While in this mode, a red `REC` field will appear instead, indicating cursor capture mode is enabled. Moving the cursor to the left with pan the player's viewport in the same direction. Moving the cursor down will tilt the player's viewport in the same direction. Press the `Esc` key to return to `STBY` mode.
 
-## Run in Dev Mode
-- `npm run dev`
+## For Developers
+`git clone [repository-url]`
+`cd WheelsTrainer`
+`npm ci`
 
-## Package for Windows 64-bit or macOS 64-bit
-- `npm run build:win` or `npm run build:mac`
+### Development Commands
+| Command           | Description               |
+|-------------------|---------------------------|
+| npm run dev       | Launch development mode   |
+| npm run build:win | Build Windows package     |
+| npm run build:mac | Build macOS package       |
+| npm run lint      | Run code quality checks   |
+
+## Support & Troubleshooting
+- Logs: Automatically saved to system app data folder
+- Bug Reports: Use the in-app reporting tool
 
 ## License
-MIT License - See the included LICENSE file for full terms.
+MIT License - See LICENSE for full terms.
 
 ## Contact
-For support or questions:
-- Discord: `https://discord.com/users/139956315316420608`
+For support, feature requests, or collaboration:
+- Discord: Foo_Childe (https://discord.com/users/139956315316420608)
+- GitHub: WheelsTrainer (https://github.com/FooChilde/WheelsTrainer)
