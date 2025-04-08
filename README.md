@@ -14,7 +14,7 @@ A specialized training tool for camera operators that simulates real-world geare
 ### For End Users
 1. Download the latest release for your OS from the Releases page
 2. Windows: Run `WheelsTrainer-Setup-x.x.x.exe` and complete setup wizard
-3. macOS: Open `WheelsTrainer-x.x.x-arm64.dmg` and drag to Applications
+3. macOS: Open `WheelsTrainer-x.x.x-arm64.dmg` and drag to Applications. Then, right-click on the Applications folder, select "New Terminal at Folder" and enter the command `xattr -c /applications/wheelstrainer.app`. This writes an attribute to the downloaded copy of the app that allows it to bypass gatekeeper and open despite it not containing an Apple Developer Certificate.
 
 ## Usage
 1. Launch the application. If launching for the first time, activation may be required. 
