@@ -12,15 +12,15 @@ A specialized training tool for camera operators that simulates real-world geare
 
 ## Installation
 ### For End Users
-1. Download the latest release for your OS from the Releases page.
+1. Download the latest release for your OS from the Releases page. For Intel Mac users, download the `x64.dmg`. For Apple Silicon users (M1, M2, etc), download the `arm64.dmg`.
 2. Windows: Run `WheelsTrainer-Setup-x.x.x-Windows.exe` and complete setup wizard.
-3. macOS: Open `WheelsTrainer-x.x.x-macOS.dmg` and drag to Applications. Then, right-click on the Applications folder, select "New Terminal at Folder" and enter the command `xattr -c /applications/wheelstrainer.app`. This writes an attribute to the downloaded copy of the app that allows it to bypass gatekeeper and open despite it not containing an Apple Developer Certificate.
+3. macOS: Open the `.dmg` and drag `WheelsTrainer.app` to Applications. Then, right-click on the Applications folder, select "New Terminal at Folder" and enter the command `xattr -c /applications/wheelstrainer.app`. This writes an attribute to the downloaded copy of the app that allows it to bypass gatekeeper and open despite it not containing an Apple Developer Certificate.
 
 ## Usage
 1. Launch the application. If launching for the first time, activation may be required. 
 2. Configure your controller type in Settings:
-   - OSC Mode: For Inertia Wheels controllers
-   - Mouse Mode: For HammerHead/Black-Tek/Rexy Wheels or other mouse-style controllers
+   - OSC Mode: For Inertia Wheels controllers. Match your IP Address and Port settings to your OSC server.
+   - Mouse Mode: For HammerHead/Black-Tek/Rexy Wheels or other mouse-style controllers. Click on the `STBY` button in the main window for player control. Press `Esc` key to exit.
 3. Load any YouTube spherical video using the URL input near the bottom left corner of the player.
 4. Adjust FOV and framing tools as desired.
 
@@ -56,6 +56,5 @@ MIT License - See LICENSE for full terms.
 
 ## Contact
 For support, feature requests, or collaboration:
-- Use the `Feedback` or `Bug Report` links in the Help menu.
 - Discord: Foo_Childe (https://discord.com/users/139956315316420608)
 - GitHub: WheelsTrainer (https://github.com/FooChilde/WheelsTrainer)
