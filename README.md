@@ -1,5 +1,5 @@
 # WheelsTrainer
-A Professional Camera Control Trainer for YouTube Spherical Videos
+A Geared and Remote Head Trainer for YouTube Spherical Videos
 
 A specialized training tool for camera operators that simulates real-world geared & remote head controls using either OSC-compatible wheels or mouse-style controllers.
 
