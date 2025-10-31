@@ -107,10 +107,12 @@ A specialized training tool for camera operators that simulates real-world geare
 ## For Developers
 
 ### Development Setup
-```bash
+```sh
 git clone https://github.com/FooChilde/WheelsTrainer
 cd WheelsTrainer
-npm ci
+npm install
+npm start
+```
 
 ### Development Commands
 | Command             | Description                            |
