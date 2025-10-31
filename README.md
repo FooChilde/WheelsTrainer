@@ -116,6 +116,7 @@ npm start
 
 ### Development Commands
 | Command             | Description                            |
+|:--------------------|:---------------------------------------|
 | `npm start`         | Launch production mode (requires auth) |
 | `npm run build-win` | Build Windows package                  |
 | `npm run build-mac` | Build macOS package                    |
